@@ -37,8 +37,8 @@ public class Helper {
     public static void getMessageBox(String title, String message, String type) {
         switch (type) {
             case "warning" -> JOptionPane.showMessageDialog(null, message, title, JOptionPane.WARNING_MESSAGE);
-            case "plain" -> JOptionPane.showMessageDialog(null, message, title, JOptionPane.PLAIN_MESSAGE);
             case "info" -> JOptionPane.showMessageDialog(null, message, title, JOptionPane.INFORMATION_MESSAGE);
+            default -> JOptionPane.showMessageDialog(null, message, title, JOptionPane.PLAIN_MESSAGE);
         }
     }
 }

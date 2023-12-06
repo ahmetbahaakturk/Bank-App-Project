@@ -1,7 +1,9 @@
-import Login.LoginPage;
+import User.User;
+import OperationPage.OperationPage;
 
 public class Main {
     public static void main(String[] args) {
-        new LoginPage();
+        new OperationPage(new User(1,"adsa", "sda", "asd"));
+        //new LoginPage();
     }
 }

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="27beedc5-8574-4f66-a48b-b7b9ea1d877d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Bank-App/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bank-App/src/Helper/Operation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bank-App/src/LoginPage/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bank-App/src/OperationPage/OperationPage.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bank-App/src/OperationPage/OperationPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bank-App/src/RegisterPage/Register.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bank-App/src/RegisterPage/RegisterPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bank-App/src/User/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bank-App/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Bank-App/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bank-App/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Bank-App/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bank-App/out/production/Bank-App/Helper/Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/Bank-App/out/production/Bank-App/Helper/Config.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bank-App/out/production/Bank-App/Helper/Helper.class" beforeDir="false" afterPath="$PROJECT_DIR$/Bank-App/out/production/Bank-App/Helper/Helper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bank-App/out/production/Bank-App/Login/LoginPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bank-App/out/production/Bank-App/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/Bank-App/out/production/Bank-App/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bank-App/src/Helper/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bank-App/src/Helper/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bank-App/src/Helper/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bank-App/src/Helper/Helper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bank-App/src/Login/LoginPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/Bank-App/src/LoginPage/LoginPage.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bank-App/src/Login/LoginPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bank-App/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bank-App/src/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2ZBCde9HwoR2n7t3U9f8L4wF4hJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/ahmet/Desktop/Desktop/Bank-App-Project/Bank-App",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="27beedc5-8574-4f66-a48b-b7b9ea1d877d" name="Changes" comment="" />
+      <created>1701886173271</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701886173271</updated>
+      <workItem from="1701886174283" duration="9000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
