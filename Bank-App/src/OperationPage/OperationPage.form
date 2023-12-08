@@ -3,27 +3,76 @@
   <grid id="27dc6" binding="pnl_wrapper" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="929" height="733"/>
+      <xy x="20" y="20" width="885" height="400"/>
     </constraints>
     <properties/>
     <border type="none"/>
     <children>
-      <tabbedpane id="7c3f3" binding="tabbedPane1" default-binding="true">
+      <tabbedpane id="8284d" binding="tabbedPane1" default-binding="true">
         <constraints>
           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
             <preferred-size width="200" height="200"/>
           </grid>
         </constraints>
         <properties>
+          <enabled value="true"/>
+          <font name="DialogInput" size="18" style="1"/>
+          <tabLayoutPolicy value="0"/>
           <tabPlacement value="2"/>
+          <visible value="true"/>
         </properties>
         <border type="none"/>
         <children>
-          <grid id="5c485" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+          <grid id="3535a" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
-              <tabbedpane title="Bilgiler"/>
+              <tabbedpane title="Kişisel Bilgiler"/>
+            </constraints>
+            <properties>
+              <background color="-1760207"/>
+              <foreground color="-1760207"/>
+              <inheritsPopupMenu value="false"/>
+            </properties>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="4eede" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Al-Sat"/>
             </constraints>
             <properties/>
+            <border type="none"/>
+            <children>
+              <component id="c9d4b" class="javax.swing.JButton" binding="btn_yokArtik">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Button"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="b38ca" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Efenin Omuzu"/>
+            </constraints>
+            <properties>
+              <background color="-13619420"/>
+            </properties>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="3725" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Bahanın Sağ Omuzu"/>
+            </constraints>
+            <properties>
+              <background color="-13619189"/>
+            </properties>
             <border type="none"/>
             <children/>
           </grid>

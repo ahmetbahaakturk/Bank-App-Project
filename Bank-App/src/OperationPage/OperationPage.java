@@ -10,28 +10,17 @@ public class OperationPage extends JFrame {
     User user;
     private JPanel pnl_wrapper;
     private JTabbedPane tabbedPane1;
-    private JLabel lbl_name;
-    private JLabel lbl_surname;
-    private JLabel lbl_tcno;
-    private JButton btn_showpanel;
-    private JPanel pnl_sidebar;
+    private JButton btn_yokArtik;
 
     public OperationPage(User user) {
-        this.user = user;
-        setContentPane(pnl_wrapper);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        setMinimumSize(new Dimension(400, 300));
-        setSize(900, 700);
-        setResizable(true);
+        setContentPane(pnl_wrapper);
+        setMinimumSize(new Dimension(1280, 720));
+        setSize(1280, 720);
         Helper.centralizePage(this);
-        setTitle("İşlemler Menüsü");
+        setTitle("Sıradan Bank");
         setVisible(true);
-        refreshData();
-    }
 
-    private void refreshData() {
-        lbl_name.setText("Ad: " + user.getName());
-        lbl_surname.setText("Soyad: " + user.getSurname());
-        lbl_tcno.setText("T.C Kimlik No: " + user.getTcno());
+        btn_yokArtik.addActionListener(e -> System.out.println("Yok artık"));
     }
 }

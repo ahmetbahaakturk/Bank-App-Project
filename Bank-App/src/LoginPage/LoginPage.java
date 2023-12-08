@@ -18,6 +18,7 @@ public class LoginPage extends JFrame {
     private JLabel lbl_tcno;
     private JLabel lbl_password;
     private JLabel lbl_haveAccount;
+    private JLabel lbl_status;
 
     public LoginPage() {
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -29,7 +30,7 @@ public class LoginPage extends JFrame {
         setVisible(true);
 
         btn_login.addActionListener(e -> {
-            if(Operation.login(txtFld_tcno.getText(), txtFld_password.getPassword())) {
+            if (Operation.login(txtFld_tcno.getText(), txtFld_password.getPassword(), lbl_status)) {
                 dispose();
             }
         });

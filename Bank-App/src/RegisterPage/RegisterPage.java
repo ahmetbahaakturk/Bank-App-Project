@@ -4,9 +4,11 @@ import Helper.*;
 import LoginPage.LoginPage;
 
 import javax.swing.*;
+import java.sql.Connection;
 import java.sql.PreparedStatement;
 
 public class RegisterPage extends JFrame {
+    private Connection connection;
     private JPanel pnl_wrapper;
     private JPanel pnl_topWrapper;
     private JPanel pnl_bottomWrapper;
@@ -17,6 +19,7 @@ public class RegisterPage extends JFrame {
     private JButton btn_register;
 
     public RegisterPage() {
+        this.connection = DBConnect.getInstance();
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setContentPane(pnl_wrapper);
         setSize(400, 260);
@@ -39,7 +42,7 @@ public class RegisterPage extends JFrame {
                     String password = String.valueOf(txtfld_password.getPassword());
 
                     String query = "INSERT INTO users (name, surname, tcno, password) VALUES (?, ?, ?, ?)";
-                    PreparedStatement pr = DBConnect.getInstance().prepareStatement(query);
+                    PreparedStatement pr = connection.prepareStatement(query);
                     pr.setString(1, name);
                     pr.setString(2, surname);
                     pr.setString(3, tcno);

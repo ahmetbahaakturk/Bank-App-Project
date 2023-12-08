@@ -1,13 +1,17 @@
 package Helper;
 
 import User.User;
-import OperationPage.OperationPage;
 
+import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import OperationPage.OperationPage;
+
+import javax.swing.*;
 
 public class Operation {
-    public static boolean login(String tcno, char[] password) {
+    public static final Connection connect = DBConnect.getInstance();
+    public static boolean login(String tcno, char[] password, JLabel lbl_status) {
         try {
             String pass = String.valueOf(password);
             ResultSet rs = findUser(tcno);
@@ -21,12 +25,12 @@ public class Operation {
                         new OperationPage(new User(id, name, surname, tcno));
                         return true;
                     } else {
-                        Helper.getMessageBox("Uyarı", "Hatalı Şifre", "warning");
+                        lbl_status.setText("Girdiğiniz Bilgiler Yanlış!");
                         return false;
                     }
                 }
             } else {
-                Helper.getMessageBox("Uyarı", "Girilen T.C Kimlik Numarasına Kayıtlı Kullanıcı Bulunmamaktadır!", "warning");
+                lbl_status.setText("Girdiğiniz Bilgiler Yanlış!");
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());
@@ -39,7 +43,7 @@ public class Operation {
     public static ResultSet findUser(String tcno) {
         try {
             String query = "SELECT * FROM users WHERE tcno = ?";
-            PreparedStatement pr = DBConnect.getInstance().prepareStatement(query, ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
+            PreparedStatement pr = connect.prepareStatement(query, ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
             pr.setString(1, tcno);
             ResultSet rs = pr.executeQuery();
 
