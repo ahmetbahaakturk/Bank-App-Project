@@ -3,7 +3,7 @@
   <grid id="27dc6" binding="pnl_wrapper" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="885" height="400"/>
+      <xy x="20" y="20" width="885" height="488"/>
     </constraints>
     <properties/>
     <border type="none"/>
@@ -30,34 +30,215 @@
             </properties>
             <border type="none"/>
             <children>
-              <grid id="1a5b5" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+              <grid id="1a5b5" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="0" left="0" bottom="0" right="0"/>
                 <constraints>
-                  <tabbedpane title="Hesap Bilgiler"/>
+                  <tabbedpane title="Hesap Bilgileri"/>
+                </constraints>
+                <properties>
+                  <enabled value="true"/>
+                  <opaque value="true"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <grid id="2788e" binding="pnl_userInfo" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="true"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="1e83" class="javax.swing.JLabel" binding="lbl_name">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <focusable value="true"/>
+                          <font name="Arial" size="18" style="1"/>
+                          <iconTextGap value="4"/>
+                          <opaque value="false"/>
+                          <text value="Name"/>
+                        </properties>
+                      </component>
+                      <component id="9134d" class="javax.swing.JLabel" binding="lbl_surname">
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font name="Arial" size="18" style="1"/>
+                          <text value="Surname"/>
+                        </properties>
+                      </component>
+                      <component id="df26a" class="javax.swing.JLabel" binding="lbl_tcno">
+                        <constraints>
+                          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font name="Arial" size="18" style="1"/>
+                          <text value="T.C. Kimlik No:"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="f9ed2" binding="pnl_siradanBank" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="true"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="52286" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font name="Arial Black" size="26" style="1"/>
+                          <text value="Sıradan Bank"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="9b1f3" binding="pnl_balance_trans" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <scrollpane id="99890" binding="pnl_transaction">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none" title="Son Hareketler">
+                          <font name="Cooper Black" size="18" style="1"/>
+                        </border>
+                        <children>
+                          <component id="d4fcc" class="javax.swing.JList" binding="list2" default-binding="true">
+                            <constraints/>
+                            <properties>
+                              <font name="Arial" size="24" style="1"/>
+                              <model>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                                <item value="Haluk Alireisoğlu"/>
+                              </model>
+                            </properties>
+                          </component>
+                        </children>
+                      </scrollpane>
+                      <scrollpane id="2c442" binding="pnl_balance">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                            <preferred-size width="327" height="29"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <focusable value="true"/>
+                        </properties>
+                        <border type="none" title="Hesap Bakiyesi">
+                          <font name="Cooper Black" size="18" style="1"/>
+                        </border>
+                        <children>
+                          <component id="b747d" class="javax.swing.JTree" binding="tree1" default-binding="true">
+                            <constraints/>
+                            <properties>
+                              <font name="Arial" size="18" style="1"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </scrollpane>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+              <grid id="8cee2" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <tabbedpane title="Al-Sat"/>
                 </constraints>
                 <properties/>
                 <border type="none"/>
-                <children>
-                  <component id="15731" class="javax.swing.JLabel" binding="lbl_userInfo">
-                    <constraints>
-                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-                    </constraints>
-                    <properties>
-                      <font name="Arial" size="18" style="1"/>
-                      <text value="Label"/>
-                    </properties>
-                  </component>
-                  <hspacer id="51b47">
-                    <constraints>
-                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-                    </constraints>
-                  </hspacer>
-                  <vspacer id="a6ed6">
-                    <constraints>
-                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-                    </constraints>
-                  </vspacer>
-                </children>
+                <children/>
+              </grid>
+              <grid id="93e27" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <tabbedpane title="Para Gönder"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children/>
               </grid>
             </children>
           </tabbedpane>
