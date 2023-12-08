@@ -1,10 +1,10 @@
 package User;
 
 public class User {
+    private int id;
     private String name;
     private String surname;
     private String tcno;
-    private int id;
 
     public User(int id, String name, String surname, String tcno) {
         this.id = id;
