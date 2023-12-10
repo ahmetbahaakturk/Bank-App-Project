@@ -48,6 +48,7 @@ public class LoginPage extends JFrame {
         });
 
         btn_register.addActionListener(e -> {
+            lbl_status.setText("");
             pnl_loginWrapper.setVisible(false);
             pnl_registerWrapper.setVisible(true);
         });
