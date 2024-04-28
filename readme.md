@@ -66,5 +66,3 @@ Java Swing kullanılarak geliştirilen Sıradan Bank, banka otomasyon işlemleri
 ![Screenshot 2024-04-28 220417](https://github.com/ahmetbahaakturk/Bank-App-Project/assets/116023192/efe2884b-252a-4f66-a777-f3d890be1c46)
 
 ---
-
-Bu şekilde, okunabilirliği artırmak ve profesyonel bir izlenim bırakmak için başlıkları belirgin hale getirdim ve font boyutunu artırdım. Ayrıca görsel içerikleri daha iyi bir şekilde yapılandırarak uygulamanın nasıl çalıştığını adım adım açıkladım.
