@@ -1,5 +1,3 @@
-Bu README dosyasını daha profesyonel bir şekilde tasarlayarak, yazı fontunu büyüttüm ve bazı kısımlarını düzelttim:
-
 ---
 
 # Sıradan Bank
