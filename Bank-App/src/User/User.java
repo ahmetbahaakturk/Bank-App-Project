@@ -13,7 +13,7 @@ public class User {
         this.tcno = tcno;
     }
 
-    public int setId() {
+    public int getId() {
         return id;
     }
 

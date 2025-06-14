@@ -63,7 +63,7 @@ public class LoginPage extends JFrame {
     private void register() {
         try {
             if (Operation.findUser(txtfld_register_tcno.getText()) == null) {
-                if (!txtfld_register_name.getText().isEmpty() && !lbl_register_surname.getText().isEmpty() && !String.valueOf(txtfld_register_password.getPassword()).isEmpty() && !txtfld_register_tcno.getText().isEmpty()) {
+                if (!txtfld_register_name.getText().isEmpty() && !txtfld_register_surname.getText().isEmpty() && !String.valueOf(txtfld_register_password.getPassword()).isEmpty() && !txtfld_register_tcno.getText().isEmpty()) {
                     String name = txtfld_register_name.getText();
                     String surname = txtfld_register_surname.getText();
                     String tcno = txtfld_register_tcno.getText();
